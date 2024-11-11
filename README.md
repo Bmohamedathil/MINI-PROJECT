@@ -1,55 +1,41 @@
-### EX NO : 03 
+### EX NO : 01
 ### DATE : 
-## Read a File Name from User and Create that File and Insert Text in to that File
+## Find the Biggest among Three Numbers
 
 ### AIM :
-        To Write a C program to read a file name from user, create that file and insert 
-        text in to that file
+        To Write a C program to find the biggest among three numbers using structure
         
 ### ALGORITHM :
 
-1. Define a Character Array to Hold the File Name
-
-2. Input the File Name from the User
-
-3. Open the File in Write Mode Using fopen()
-   
-4. Define a Character Array to Hold the Text to Insert
-   
-5. Input the Text to be Inserted
- 
-6. Write the Text to the File
- 
-7. Close the File Using fclose()
- 
-8. Display a Confirmation Message
- 
-9. Display the result.
+ 1. Define a structure to hold three integers.
+ 2. Create a function to find the largest number among the three.
+ 3. Input the numbers from the user.
+ 4. Compare the numbers inside the function and return the largest one.
+ 5. Display the result.
 
 ### PROGRAM :
 ```C
-#include <stdio.h>
+#include<stdio.h>
+struct big
+{
+    int a,b,c;
+}s;
 int main()
 {
-    char name[50];
-    scanf("%s",name);
-    
-    FILE *fp=fopen("name.txt","w");
-    if(name==NULL)
-    {
-        printf("NULL");
-    }
-    fprintf(fp,"2\naaa\nbbb");
-    
-    fclose(fp);
-    printf("%s Opened\n",name);
-    printf("Data added Successfully");
-        
+    scanf("%d %d %d",&s.a,&s.b,&s.c);
+    if(s.a > s.b && s.a > s.c)
+    printf("%d",s.a);
+    else if(s.b > s.a && s.b > s.c)
+    printf("%d",s.b);
+    else
+    printf("%d",s.c);
 }
+        
+
 ```
 
 ### OUTPUT :
-![image](https://github.com/user-attachments/assets/bb623b47-222a-4c18-b0f5-9b376e357a7c)
+![1C A](https://github.com/user-attachments/assets/012d9b8d-e225-4231-9b51-52245e347484)
 
 
 ### RESULT :
