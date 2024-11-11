@@ -1,4 +1,4 @@
-### EX NO : 03 b
+### EX NO : 03 
 ### DATE : 
 ## Read a File Name from User and Create that File and Insert Text in to that File
 
@@ -54,4 +54,4 @@ int main()
 
 ### RESULT :
         Thus the c program to read a file name from user, create that file and insert text in to 
-        that file is executed successfully.
+        that file was executed successfully.
