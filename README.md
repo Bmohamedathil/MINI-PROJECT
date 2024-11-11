@@ -28,8 +28,6 @@ int main(){
     areaptr->aval=(areaptr->num)*(areaptr->num);
     printf("Displaying:\nArea: %d",areaptr->aval);
     
-
-
  return 0;
 
 }
