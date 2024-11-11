@@ -1,40 +1,44 @@
-### EX NO : 01
+### EX NO : 04
 ### DATE : 
-##  Find the Biggest among Three Numbers
+##  Read a File Name from User and Create that File using fopen()
 
 ### AIM :
-         To Write a C program to find the biggest among three numbers using structure
+         To Write a C program to read a file name from user
+         and create that file using fopen()
         
 ### ALGORITHM :
- 1. Define a structure to hold three integers.
- 2. Create a function to find the largest number among the three.
- 3. Input the numbers from the user.
- 4. Compare the numbers inside the function and return the largest one.
- 5. Display the result.
+ 1. Define a Character Array to Hold the File Name
+ 2. Input the File Name from the User
+ 3. Open the File in Write Mode Using fopen()
+ 4. Check if the File Was Created Successfully
+ 5. Display the Result
+ 6. Close the File Using fclose()
 
 ### PROGRAM :
 ```C
-#include<stdio.h>
-struct big
-{
-    int a,b,c;
-}s;
+#include <stdio.h>
 int main()
 {
-    scanf("%d %d %d",&s.a,&s.b,&s.c);
-    if(s.a > s.b && s.a > s.c)
-    printf("%d",s.a);
-    else if(s.b > s.a && s.b > s.c)
-    printf("%d",s.b);
-    else
-    printf("%d",s.c);
+   char name[50];
+   scanf("%s",name);
+   FILE *fp=fopen("name.html","w");
+   if(fp==NULL)
+   {
+       printf("Null");
+       return 0;
+   }
+   printf("%s File Created Successfully\n",name);
+   printf("%s File Opened\n",name);
+   fclose(fp);
+   printf("%s File Closed",name);
 }
 ```
 
 ### OUTPUT :
-![1C A](https://github.com/user-attachments/assets/fa4ff4e7-34c3-47c5-b629-6cf44a3946fc)
+![4 C A](https://github.com/user-attachments/assets/cc3fd9d1-ba1e-4abf-8d3c-397a65fd60ab)
+
 
 
 ### RESULT :
-          Thus the c program to write a C program to find the biggest among 
-          three numbers using structure was executed successfully.
+          Thus the c program to read a file name from user and create 
+          that file using fopen() was executed successfully.
