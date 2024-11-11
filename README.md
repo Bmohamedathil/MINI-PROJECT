@@ -1,44 +1,33 @@
-### EX NO : 04
+### EX NO : 05
 ### DATE : 
-##  Read a File Name from User and Create that File using fopen()
+##  Read about the printf() command
 
 ### AIM :
-         To Write a C program to read a file name from user
-         and create that file using fopen()
+         To Write a C program to read about the printf() command.
         
 ### ALGORITHM :
- 1. Define a Character Array to Hold the File Name
- 2. Input the File Name from the User
- 3. Open the File in Write Mode Using fopen()
- 4. Check if the File Was Created Successfully
- 5. Display the Result
- 6. Close the File Using fclose()
+ 1. Declare a Character Array to Store the Input String
+ 2. Read the Input String Using scanf()
+ 3. Print "Hello, World!" on a New Line
+ 4. Print the Input String
 
 ### PROGRAM :
 ```C
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
-   char name[50];
-   scanf("%s",name);
-   FILE *fp=fopen("name.html","w");
-   if(fp==NULL)
-   {
-       printf("Null");
-       return 0;
-   }
-   printf("%s File Created Successfully\n",name);
-   printf("%s File Opened\n",name);
-   fclose(fp);
-   printf("%s File Closed",name);
+    char a[100];
+    scanf("%[^\n]",a);
+    printf("Hello, World!\n");
+    printf("%s",a);
 }
+
 ```
 
 ### OUTPUT :
-![4 C A](https://github.com/user-attachments/assets/cc3fd9d1-ba1e-4abf-8d3c-397a65fd60ab)
 
+![image](https://github.com/user-attachments/assets/3ed00a99-1303-4122-984e-0146aa398ded)
 
 
 ### RESULT :
-          Thus the c program to read a file name from user and create 
-          that file using fopen() was executed successfully.
+          Thus the c program to read about the printf() command was executed successfully.
